@@ -1,0 +1,86 @@
+/**
+ * Romanization lookup for morpheme units after segmentation/normalization.
+ */
+export const MORPHEME_ROMAN: Record<string, string> = {
+    // Sanskrit / Pali morphemes
+    'ศรี': 'si', 'เริก': 'roek', 'ทัศ': 'that', 'ศัพ': 'sap',
+    'ษี': 'si', 'ษน': 'son', 'ระ': 'ra', 'หวัด': 'wat', 'หัด': 'hat',
+    'ถะ': 'tha', 'กิด': 'kit', 'เศษ': 'set', 'เทด': 'thet',
+    'บอ': 'bo', 'พัด': 'phat', 'ทะ': 'tha', 'อิด': 'it', 'สะ': 'sa',
+    'ราด': 'rat', 'ชะ': 'cha', 'มะ': 'ma', 'จัน': 'chan', 'จราจร': 'charachon',
+    'ยด': 'yot', 'เกียด': 'kiat', 'ติ': 'ti', 'พรือ': 'phrue',
+    'กริต': 'krit', 'พฤด': 'phruet', 'อับ': 'ap', 'เดด': 'det',
+    'ริด': 'rit', 'โท': 'tho', 'ฤา': 'rue', 'ดี': 'di',
+    'จิกา': 'chika', 'สุราษฎร์': 'surat', 'สุราษฎ': 'surat',
+    'ธมม': 'tham', 'อาศัย': 'asai', 'อเมริกา': 'amerika',
+    'พยา': 'phaya', 'ณะ': 'na', 'ธานี': 'thani', 'เก้ว': 'kaew',
+    'ษัตริ': 'satri',
+
+    // Geography
+    'สมุทร': 'samut', 'ปราการ': 'prakan', 'สงคราม': 'songkhram', 'สาคร': 'sakhon',
+    'สระ': 'sa', 'บุรี': 'buri', 'สุโข': 'sukho',
+    'ทัย': 'thai', 'พรรณ': 'phan', 'ราษฎร์': 'rat', 'ราชธานี': 'ratchathani',
+    'อุดร': 'udon', 'อุตร': 'uttar', 'ดิตถ์': 'dit', 'อุทัย': 'uthai', 'อุบล': 'ubon',
+    'อำนาจ': 'amnat', 'เจริญ': 'charoen', 'สุรินทร์': 'surin',
+    'หนอง': 'nong', 'บัวลำภู': 'bualamphu', 'อ่างทอง': 'angthong',
+    'นคร': 'nakhon', 'ราชสีมา': 'ratchasima', 'ชล': 'chon',
+    'ปฐม': 'pathom', 'ศรีธรรมราช': 'sithammarat',
+    'พิษณุ': 'phitsanu', 'โลก': 'lok',
+    'ราย': 'rai', 'ลำ': 'lam', 'ปาง': 'pang',
+    'นนท': 'nontha', 'ปทุม': 'pathum',
+    'ชัยภูมิ': 'chaiphum', 'ขอนแก่น': 'khonkaen',
+    'ราชบุรี': 'ratchaburi', 'ปัตตานี': 'pattani',
+    'สงขลา': 'songkhla', 'นครศรี': 'nakhonsi',
+    'กาญจน': 'kanchana', 'กาฬสินธุ์': 'kalasin', 'กำแพง': 'kamphaeng', 'เพชร': 'phet',
+    'จันท': 'chanth', 'ชุมพร': 'chumphon', 'นายก': 'nayok', 'พนม': 'phanom',
+    'สวรรค์': 'sawan', 'ประจวบ': 'prachuap', 'คีรีขันธ์': 'khirikhan',
+    'ปราจีน': 'prachin', 'อยุธยา': 'ayutthaya', 'สารคาม': 'sarakham',
+    'แม่ฮ่องสอน': 'maehongson', 'ฮ่องสอน': 'hongson', 'ยโสธร': 'yasothon',
+    'สกล': 'sakon', 'สุพรรณ': 'suphan', 'สิงห์': 'sing', 'บูรณ์': 'bun',
+    'พัทลุง': 'phatthalung', 'พิจิตร': 'phichit', 'เลย': 'loei',
+    'กระบี่': 'krabi', 'ฉะเชิงเทรา': 'chachoengsao', 'ชัยนาท': 'chainat',
+    'ตรัง': 'trang', 'ตาก': 'tak', 'นราธิวาส': 'narathiwat', 'น่าน': 'nan',
+    'บึงกาฬ': 'buengkan', 'บุรีรัมย์': 'buriram', 'พะเยา': 'phayao',
+    'พังงา': 'phangnga', 'ยะลา': 'yala', 'ร้อยเอ็ด': 'roiet', 'ระนอง': 'ranong',
+    'ลพบุรี': 'lopburi', 'ลำพูน': 'lamphun', 'ศรีสะเกษ': 'sisaket', 'สตูล': 'satun',
+    'แพร่': 'phrae', 'มุกดาหาร': 'mukdahan', 'หนองคาย': 'nongkhai',
+    'สระบุรี': 'saraburi', 'สมุทรสาคร': 'samutsakhon', 'ตราด': 'trat',
+    'อุตรดิตถ์': 'uttaradit', 'อุทัยธานี': 'uthaithani',
+
+    // Province compounds (full-name lookup)
+    'กาญจนบุรี': 'kanchanaburi', 'กำแพงเพชร': 'kamphaengphet',
+    'จันทบุรี': 'chanthaburi', 'นครนายก': 'nakhonnayok', 'นครพนม': 'nakhonphanom',
+    'นครสวรรค์': 'nakhonsawan', 'ประจวบคีรีขันธ์': 'prachuapkhirikhan',
+    'ปราจีนบุรี': 'prachinburi', 'พระนครศรีอยุธยา': 'phranakhonsiayutthaya',
+    'มหาสารคาม': 'mahasarakham', 'สกลนคร': 'sakonnakhon',
+    'สุพรรณบุรี': 'suphanburi', 'เพชรบุรี': 'phetchaburi', 'เพชรบูรณ์': 'phetchabun',
+    'สิงห์บุรี': 'singburi',
+
+    // Calendar roots & suffixes
+    'มกรา': 'mokkar', 'กุมภา': 'kumpha', 'พันธ์': 'phan',
+    'มีนา': 'mina', 'เมษา': 'mesa', 'พฤษภา': 'phruetsapha', 'มิถุนา': 'mithuna',
+    'กรกฎา': 'karakada', 'สิงหา': 'singha', 'กันยา': 'kanya',
+    'ตุลา': 'tula', 'ธันวา': 'thanwa', 'ายน': 'ayon',
+
+    // Common compounds
+    'ผู้': 'phu', 'ใช้': 'chai', 'จัด': 'chat', 'สรร': 'san',
+    'ตำ': 'tam', 'รวจ': 'ruat', 'กฎ': 'kot', 'หมาย': 'mai',
+    'อินทรี': 'intri', 'อาจารย์': 'achan', 'อาจาร': 'achan', 'จัดสรร': 'jadsan',
+
+    // Article / daily life
+    'ผม': 'phom', 'ตื่น': 'tuen', 'ตื่นเช้า': 'tuenchao',
+    'อากาศ': 'akat', 'ร้อน': 'ron', 'อบอ้าว': 'opao', 'อากาศร้อนอบอ้าว': 'akatronopao',
+    'ท้องฟ้า': 'thongfa', 'แจ่มใส': 'jamsai', 'ท้องฟ้าแจ่มใส': 'thongfajamsai',
+    'อาบ': 'ab', 'อาบน้ำ': 'abnam',
+    'วัด': 'wat',
+    'ไฟฟ้า': 'faifa', 'รถไฟฟ้า': 'rotfaifa',
+    'สนามบิน': 'sanambin', 'สุวรรณภูมิ': 'suvarnabhumi',
+    'สนามบินสุวรรณภูมิ': 'sanambinsuvarnabhumi',
+    'พระ': 'phra', 'ธาตุ': 'that', 'พระธาตุ': 'phrathat',
+    'ดอย': 'doi', 'ดอยสุเทพ': 'doisuthep',
+    'วัดพระธาตุดอยสุเทพ': 'watphrathatdoisuthep',
+    'ข้าวซอย': 'khaosoai',
+    'ตลาด': 'talat', 'วโรรส': 'wororot', 'ตลาดวโรรส': 'talatwororot',
+    'สะพาน': 'saphan', 'ข้าม': 'kham', 'แคว': 'khwa', 'แม่น้ำแคว': 'maenamkhwa',
+    'สะพานข้ามแม่น้ำแคว': 'saphankhammaenamkhwa',
+};

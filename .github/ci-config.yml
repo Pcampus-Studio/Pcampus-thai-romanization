@@ -1,0 +1,6 @@
+# CI commands for app in code/ (G-001 bootstrap)
+
+working_directory: code
+
+test: npm test
+lint: npm run lint

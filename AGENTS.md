@@ -1,15 +1,13 @@
-# {PROJECT_NAME} — Agent Guide
+# PCP Thai Romanization — Agent Guide
 
 > **Pause before coding.** This repo uses **Pcampus goal-driven development** — Human defines scope, AI implements within goals.
-
-Replace `{PROJECT_NAME}` and mission below when bootstrapping. **Process docs and `pcampus-*` skills** ship with **Pcampus Agent OS** and stay unchanged across projects.
 
 Human onboarding: [docs/06-workflows/team-workflow.md](docs/06-workflows/team-workflow.md)  
 Framework map: [docs/03-architecture/design-spec.md](docs/03-architecture/design-spec.md)
 
 ## Mission (one paragraph)
 
-{Describe what the product is, who it serves, and what it is NOT.}
+**PCP Thai Romanization** is a rule-based TypeScript library that converts Thai script to Latin romanization. It serves developers who need offline, deterministic transliteration with morpheme segmentation, vocabulary packs, and reverse lookup. It is **not** an ML service or cloud API.
 
 ## Pcampus Agent OS — six layers
 
@@ -133,12 +131,10 @@ Details: [docs/04-agents/dev-roles.md](docs/04-agents/dev-roles.md)
 ## Standard commands
 
 ```bash
-# Replace with your stack — run from repo root; app lives in code/
-# cd code && npm test && npm run lint
-# cd code && dart analyze && flutter test
-# cd code && go test ./... && golangci-lint run
-{TEST_COMMANDS}
+cd code && npm test && npm run lint && npm run build
 ```
+
+Library docs: [code/README.md](code/README.md) · Playground: `cd code && npm run playground`
 
 ## Pcampus standard skills (v1.1.0)
 

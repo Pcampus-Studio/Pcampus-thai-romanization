@@ -15,7 +15,7 @@ draft → ready → in_progress → review → approved → done
 
 | Goal | Title | Status | Depends on | Spec |
 |------|-------|--------|------------|------|
-| G-001 | Project bootstrap | planned | — | [G-001](goals/G-001.md) |
+| G-001 | Library bootstrap | review | — | [G-001](goals/G-001.md) |
 | G-004 | {Next goal title} | planned | G-001 | [G-004](goals/G-004.md) |
 
 ## Done (archived)

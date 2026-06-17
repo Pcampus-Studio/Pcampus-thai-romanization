@@ -7,11 +7,11 @@
 
 | Field | Value |
 |-------|--------|
-| **Phase** | Agent OS scaffold — fill product docs before coding |
+| **Phase** | G-001 library bootstrap — review |
 | **Framework** | [03-architecture/design-spec.md](03-architecture/design-spec.md) |
 | **Active goal** | [G-001](07-backlog/goals.md) |
-| **Stack** | {STACK} |
-| **Last updated** | {DATE} |
+| **Stack** | TypeScript, Vitest, tsup, Next.js playground |
+| **Last updated** | 2026-06-17 |
 
 ## Read before writing code
 
